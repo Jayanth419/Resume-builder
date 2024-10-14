@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5e5e5e;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 90%;
+}
+form {
+    flex: 1;
+    background: #d4d1d4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form h2, #resume-preview h2 {
+    margin-top: 0;
+}
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #5a375b;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+form input:focus, form textarea:focus {
+    border-color: #333;
+}
+#resume-preview {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#preview-content {
+    transition: opacity 0.5s ease-in-out;
+}
+.education-entry, .experience-entry {
+    margin-bottom: 20px;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
